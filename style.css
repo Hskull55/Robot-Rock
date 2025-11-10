@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #9b59b6;   /* morado neón */
+    --secondary-color: #ffffff; /* blanco */
+    --bg-color: #1c003e;        /* fondo oscuro violeta */
+    --shadow-color: #8e44ad;    /* sombra para efecto neón */
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 2em;
+}
+
+/* Encabezado principal HSKULL55 */
+header h1 {
+    font-size: 6em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-shadow:
+        0 0 5px var(--primary-color),
+        0 0 10px var(--primary-color),
+        0 0 20px var(--shadow-color),
+        0 0 40px var(--shadow-color);
+    margin: 0 0 1em 0;
+}
+
+/* Párrafos con efecto neón suave */
+header p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    text-shadow:
+        0 0 2px var(--secondary-color),
+        0 0 5px var(--primary-color);
+}
