@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: var(--bg-color);
+    background-color: #AE70CE;
     color: var(--secondary-color);
     display: flex;
     justify-content: center;
@@ -21,8 +21,8 @@ body {
 header h1 {
     font-size: 6em;
     text-transform: uppercase;
-    color: var(--primary-color);
-    -webkit-text-stroke: 2px black; /* borde negro */
+    color: #690D98;
+    -webkit-text-stroke: 5px black; /* borde negro */
     margin: 0 0 1em 0;
 }
 
