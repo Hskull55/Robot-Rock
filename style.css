@@ -1,35 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
 :root {
     --primary-color: #9b59b6;   /* morado */
     --secondary-color: #ffffff; /* blanco */
-    --bg-color: #1c003e;        /* fondo oscuro violeta */
+    --bg-color: #AE70CE;        /* fondo violeta claro */
+    --accent-color: #690D98;    /* morado oscuro */
 }
 
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #AE70CE;
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--bg-color);
     color: var(--secondary-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 100vh;
     padding: 2em;
+
+    /* Igualar renderizado entre PC y móvil */
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
 }
 
 /* Encabezado HSKULL55 con borde negro */
 header h1 {
-    font-size: 6em;
+    font-size: clamp(3em, 10vw, 6em); /* Escala fluida según pantalla */
     text-transform: uppercase;
-    color: #690D98;
-    -webkit-text-stroke: 5px black; /* borde negro */
+    color: var(--accent-color);
+    -webkit-text-stroke: 3px black; /* borde negro más equilibrado */
     margin: 0 0 1em 0;
+    letter-spacing: 3px;
 }
 
 /* Párrafos normales sin sombra */
 header p {
-    font-size: 1.5em;
+    font-size: clamp(1em, 3vw, 1.5em);
     margin: 0.5em 0;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--secondary-color);
+    max-width: 800px;
 }
